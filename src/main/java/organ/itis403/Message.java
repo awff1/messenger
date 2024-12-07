@@ -1,14 +1,14 @@
 package organ.itis403;
 
 public class Message {
-    private String userSend;
-    private String userGet;
+    private User userSend;
+    private User userGet;
     private String text;
     private String date;
 
     public Message() {}
 
-    public Message(String userSend, String userGet, String text, String date) {
+    public Message(User userSend, User userGet, String text, String date) {
         this.date = date;
         this.text = text;
         this.userGet = userGet;
@@ -23,11 +23,11 @@ public class Message {
         return text;
     }
 
-    public String getUserGet() {
+    public User getUserGet() {
         return userGet;
     }
 
-    public String getUserSend() {
+    public User getUserSend() {
         return userSend;
     }
 
@@ -39,11 +39,21 @@ public class Message {
         this.text = text;
     }
 
-    public void setUserGet(String userGet) {
+    public void setUserGet(User userGet) {
         this.userGet = userGet;
     }
 
-    public void setUserSend(String userSend) {
+    public void setUserSend(User userSend) {
         this.userSend = userSend;
     }
+
+    public String toString() {
+        return "Message{" +
+                "from=" + userSend.getNickname() +
+                ", to=" + userGet.getNickname() +
+                ", text='" + text +
+                ", timestamp=" + date +
+                '}';
+    }
 }
+

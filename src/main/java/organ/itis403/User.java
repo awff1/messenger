@@ -46,4 +46,13 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String toString() {
+        return "Message{" +
+                "nick=" + nickname +
+                ", username=" + username +
+                ", phoneNumber='" + phoneNumber +
+                ", password=" + password +
+                '}';
+    }
 }
