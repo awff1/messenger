@@ -46,5 +46,14 @@ public class Message {
     public void setUserSend(User userSend) {
         this.userSend = userSend;
     }
+
+    public String toString() {
+        return "Message{" +
+                "from=" + userSend.getNickname() +
+                ", to=" + userGet.getNickname() +
+                ", text='" + text +
+                ", timestamp=" + date +
+                '}';
+    }
 }
 
