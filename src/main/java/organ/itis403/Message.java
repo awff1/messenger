@@ -31,7 +31,6 @@ public class Message {
         return userSend;
     }
 
-
     public void setDate(String date) {
         this.date = date;
     }
