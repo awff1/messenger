@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Users:");
         for(int i = 0; i < users.length;i++) {
             System.out.print(users[i] + " ");
+            System.out.println();
         }
         System.out.println();
 
@@ -17,7 +18,8 @@ public class Main {
         Message[] messages = messageService.create4Message(users[0], users[1]);
         System.out.println("Messages:");
         for(int i = 0; i < messages.length; i++) {
-            System.out.print(messages[i].getUserSend() + " ");
+            System.out.print(messages[i] + " ");
+            System.out.println();
         }
     }
 }
